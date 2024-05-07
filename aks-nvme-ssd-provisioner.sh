@@ -19,7 +19,7 @@ then
   echo 'Volumes already present in "/pv-disks"'
   echo -e "\n$(ls -Al /pv-disks | tail -n +2)\n"
   echo "I assume that provisioning already happend, doing nothing!"
-  sleep infinity
+  exit 0
 fi
 
 # Perform provisioning based on nvme device count
